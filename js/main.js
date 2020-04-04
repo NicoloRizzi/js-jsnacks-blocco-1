@@ -50,10 +50,10 @@ function pippo(par1) {
   return par1;
 }
 */
-/************************************
+/*******************************************************************************
  * Snack 3: Generatore di “nomi cognomi” casuali: prendendo una lista di nomi (‘Michele’, ‘Fabio’, ‘Roberto’) e una lista di cognomi (‘Forghieri’, ‘Papagni’, ‘Marazzini’), Gatsby vuole generare una falsa lista di 5 invitati.
- */
-
+ ******************************************************************************/
+/*
 var nameList = ['Michele','Fabio','Roberto'];
 var surnameList = ['Forghieri','Papagni','Marazzini'];
 var fakeGuest = [];
@@ -76,3 +76,20 @@ console.log(fakeGuest);
 function getRandomInteger(min, max) {
   return Math.floor(Math.random()* (max - min ) ) + min;
 }
+*/
+/********************************************************************************
+ * JSNACK BONUS
+ * Crea un array di numeri interi, ad esempio (1, 4, 2, 15, 120, 17, 3) e fai la somma di tutti gli elementi che sono in posizione DI INDICE dispari. Prova prima senza funzione e poi con funzione.
+ * STABILIRE
+ ******************************************************************************/
+            // SONO LE POSIZIONI
+
+          // 0 1 2 3   4   5 6
+var array = [1,4,2,15,120,17,3];
+var somma = 0;
+ // ARRAY LENGHT 7 ELEMENTI
+for (var i = 0; i < array.length; i++)
+if (i % 2 != 0) {
+  somma += array[i];
+}
+console.log('La somma dei numeri che sono in indice di posizione dispari è',somma);
