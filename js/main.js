@@ -85,6 +85,7 @@ function getRandomInteger(min, max) {
             // SONO LE POSIZIONI
 
           // 0 1 2 3   4   5 6
+          /*
 var array = [1,4,2,15,120,17,3];
 var somma = 0;
  // ARRAY LENGHT 7 ELEMENTI
@@ -93,3 +94,20 @@ if (i % 2 != 0) {
   somma += array[i];
 }
 console.log('La somma dei numeri che sono in indice di posizione dispari è',somma);
+*/
+// CON LA FUNZIONE funzione
+var numArray = [1, 4, 2, 15, 120, 17, 3];
+var sommaDispari = sommaIndiciDispari(numArray);
+console.log(sommaDispari);
+
+// FUNZIONE
+function sommaIndiciDispari(params) {
+  var somma = 0;
+  for (var i = 0; i < params.length;  i++) {
+    if (i % 2 != 0) {
+      somma += params[i];
+  }
+  
+  }
+  return somma;
+} 
