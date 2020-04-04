@@ -59,10 +59,10 @@ var surnameList = ['Forghieri','Papagni','Marazzini'];
 var fakeGuest = [];
 // GENERO 5 INDICI CASUALI PER RIEMPIRE L'ARRAY
 for (var i = 0; i < 5; i++) {
-  var randomIndexName = Math.floor( Math.random()* (getRandomInteger(0, nameList.length - 1) ) );
+  var randomIndexName = getRandomInteger(0, nameList.length);
   console.log('Indice nomi',randomIndexName);
   
-  var randomIndexSurname = Math.floor(Math.random()*(getRandomInteger(0, surnameList.length - 1) ) );
+  var randomIndexSurname = getRandomInteger(0, surnameList.length);
   console.log('Indice cognomi',randomIndexSurname);
   
   var newFullName = nameList[randomIndexName] + " " + surnameList [randomIndexSurname];
@@ -74,5 +74,5 @@ console.log(fakeGuest);
 
 
 function getRandomInteger(min, max) {
-  return Math.floor(Math.random()* (max - min ) ) + max;
+  return Math.floor(Math.random()* (max - min ) );
 }
